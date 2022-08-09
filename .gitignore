@@ -1,0 +1,2 @@
+.env
+web/logger/history/*.log

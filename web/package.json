@@ -1,0 +1,24 @@
+{
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "prestart": "node models/seeds/urlSeeder.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "seed": "node models/seeds/urlSeeder.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "helmet": "^5.1.1",
+    "mongoose": "^6.1.7",
+    "winston": "^3.8.1"
+  }
+}
