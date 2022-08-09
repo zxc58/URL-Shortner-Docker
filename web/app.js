@@ -6,14 +6,14 @@ const express = require('express')
 const expressHandlebars = require('express-handlebars')
 require('./config/mongoose')
 const indexRouter = require('./routes/index')
-const helmet = require('helmet')
+// const helmet = require('helmet')
 const logger = require('./logger/logger')
 // set const
 const app = express()
 const port =process.env.PORT
 
 // app set
-app.use(helmet())
+// app.use(helmet())
 app.engine('handlebars', expressHandlebars.engine())
 app.set('view engine', 'handlebars')
 app.set('views', './views')
